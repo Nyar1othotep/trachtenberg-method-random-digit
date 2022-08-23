@@ -1,0 +1,156 @@
+.website {
+    &__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+        padding: 50px 0px;
+    }
+    &__heading {
+        //   padding: 0px 0px 100px 0px;
+    }
+    &__warning {
+        font-size: 40px;
+        text-align: center;
+        color: $white;
+    }
+    &__digits {
+        padding: 0px 0px 100px 0px;
+        text-align: center;
+        font-weight: 300;
+        font-size: 128px;
+        @include lh(152, 128);
+        user-select: none;
+        color: $white;
+        &>*:not(:last-child) {
+            margin: 0px 60px 0px 0px;
+        }
+    }
+    &__btns {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+        //   padding: 0px 0px 62px 0px;
+        &>*:not(:last-child) {
+            margin: 0px 0px 20px 0px;
+        }
+    }
+    &__btn {
+        color: $white;
+        transition: all 0.2s ease-in-out;
+    }
+    &__btn-result {
+        color: $white;
+        transition: all 0.2s ease-in-out;
+    }
+}
+
+.settings-website {
+    &__heading {
+        margin: 25px 0;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 24px;
+        @include lh(29, 24);
+        color: $white;
+    }
+    &__first-number,
+    &__second-number {
+        margin: 0px 0px 35px 0px;
+    }
+    &__btn {
+        padding: 0 15px !important;
+        min-height: 30px !important;
+        font-size: 18px !important;
+        color: $white;
+        transition: all 0.2s ease-in-out;
+    }
+}
+
+.first-number-settings-website,
+.second-number-settings-website {
+    &__text {
+        margin: 0px 0px 23px 0px;
+        color: $white;
+    }
+    &__choose {
+        & span {
+            color: $white;
+        }
+    }
+}
+
+.second-number-settings-website {
+    &__choose {
+        margin: 0 -10px;
+        & span {
+            padding: 0 10px;
+        }
+    }
+}
+
+input,
+select {
+    background: none;
+    width: 30px;
+    text-align: center;
+    color: $white;
+    border-bottom: 1px solid $white;
+}
+
+select {
+    text-align: left;
+    width: 50px;
+}
+
+option {
+    color: $base;
+}
+
+.error-save,
+.result {
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    color: $white;
+    padding: 20px 30px;
+    border-radius: 20px;
+    outline: 1px solid $white;
+    user-select: none;
+}
+
+.error-save {
+    background: $error;
+}
+
+.result {
+    font-weight: 600;
+    background: $green;
+}
+
+.close-settings {
+    display: none;
+    color: $white;
+    position: absolute;
+    top: -30px;
+    right: 15px;
+    font-size: 24px;
+    &.active {
+        display: block;
+    }
+}
+
+.shadow-behind-settings {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: $shadow;
+    &.active {
+        display: block;
+    }
+}

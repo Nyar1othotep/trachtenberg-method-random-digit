@@ -1,0 +1,9 @@
+$white: #FFFFFF;
+$base: #1E1E1E;
+$base-second: #2c2c2c;
+$error: #ff4444;
+$green: #64d364;
+$shadow: #00000080;
+@mixin lh($lh, $fz) {
+    line-height: calc(#{$lh} / #{$fz} * 100%);
+}

@@ -1,0 +1,52 @@
+include pug/libs/_libs
+
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		title Number Randomizer
+	body
+
+		.wrapper 
+
+			#errorSave
+			#showResult
+			.shadow-behind-settings#shadowBehindSettings
+
+			.website__body
+
+				.website__heading 
+					.heading-website__container._container
+						h1 Number Randomizer for Trachtenberg method 
+
+				.website__content#content
+
+						.website__warning ⚠️ Please make settings
+
+				.website__settings 
+						.close-settings#closeSettings ✖
+						.settings-website__container._container
+							hr
+							.settings-website__heading Settings 
+							.settings-website__first-number
+								.first-number-settings-website__text Please select how many digit number you need for the first number
+								.first-number-settings-website__choose 
+									select#firstChoose(name="first-choose") 
+										option(value="2") 2
+										option(value="3") 3
+										option(value="4") 4
+										option(value="2-3") 2-3
+										option(value="2-4") 2-4
+										option(value="3-4") 3-4
+
+							.settings-website__second-number
+								.second-number-settings-website__text Please select a range for the second number
+								.second-number-settings-website__choose 
+									span From 
+									input(type="text" id="secondFrom" placeholder="-")
+									span to 
+									input(type="text" id="secondTo" placeholder="-")
+
+							button.btn.settings-website__btn.btn--border Save

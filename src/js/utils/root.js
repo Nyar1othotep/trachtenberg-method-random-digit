@@ -1,0 +1,12 @@
+export const ERRORSAVE = document.querySelector('#errorSave');
+export const SHOWRESULT = document.querySelector('#showResult');
+export const CONTENT = document.querySelector('#content');
+export const BTNGENERATE = document.querySelector('.website__btn');
+export const BTNSAVE = document.querySelector('.settings-website__btn');
+export const FIRST = document.querySelector('#firstChoose');
+export const SECONDFROM = document.querySelector('#secondFrom');
+export const SECONDTO = document.querySelector('#secondTo');
+export const SETTINGS = document.querySelector('.website__settings');
+export const OPENSETTINGS = document.querySelector('.settings-website__heading');
+export const CLOSESETTINGS = document.querySelector('#closeSettings');
+export const SHADOWBEHINDSETTINGS = document.querySelector('#shadowBehindSettings');

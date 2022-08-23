@@ -1,0 +1,7 @@
+h1 {
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 40px;
+    @include lh(49, 40);
+    color: $white;
+}

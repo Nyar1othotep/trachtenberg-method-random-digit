@@ -1,1 +1,1 @@
-# trachtenberg-method-random-digit
+# webpack-pattern

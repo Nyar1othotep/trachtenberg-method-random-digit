@@ -1,0 +1,8 @@
+body,
+html {
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 18px;
+    @include lh(22, 18);
+    background: $base;
+}
